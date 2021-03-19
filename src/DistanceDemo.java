@@ -7,7 +7,7 @@ public class DistanceDemo {
 
         int miles = 20;
         System.out.println(miles + " miles to kilometer:");
-        System.out.println(kilometerToMile(miles));
+        System.out.println(mileToKilometer(miles));
 
     }
 

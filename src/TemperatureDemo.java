@@ -1,36 +1,36 @@
-public class TemperatureDemo {
+public class TemperatureDemo<fahrenheit> {
 
     public static void main(String[] args) {
 
-    int fahrenheit = 19;
-        double resultCelsius = currentTemperaturesCelsius(fahrenheit);
-        System.out.println( fahrenheit + "fahrenheit to celsius:");
-        System.out.println(currentTemperaturesCelsius(fahrenheit));
+
+        int celsius = -2;
+        System.out.println(celsius + " celsius to fahrenheit:");
+        System.out.println(celsiusToFahreneit(celsius));
+
+        int fahrenheit = 19;
+        double resultCelsius = fahrenheitToCelsius(fahrenheit);
+        System.out.println(fahrenheit + " grad fahrenheit are" + resultCelsius + " celsius:");
+        System.out.println(fahrenheitToCelsius(fahrenheit));
         System.out.println(resultCelsius);
+    }
 
-    int celsius = -2;
-        System.out.println(celsius + "celsius to fahrenheit:");
-        System.out.println(currentTemperaturesFahrenheit(celsius));
+    public static double celsiusToFahreneit(double celsius) {
 
-}
+        double fahrenheit;
+        double CONSTANT= 1.8;
 
-    public static double currentTemperaturesFahrenheit(double celsius) {
-
-        double fahrenheit=0;
-        double KONVERTER= 1.8;
-
-        fahrenheit=  ((celsius * KONVERTER)+32);
+        fahrenheit=  ((celsius * CONSTANT)+32);
 
         return fahrenheit;
     }
 
-    public static double currentTemperaturesCelsius(double fahrenheit) {
+    public static double fahrenheitToCelsius(double fahrenheit) {
 
-        double celsius=0;
-        double KONVERTER= (5/8);
+        double celsius;
+        double CONSTANT= 0.55;
+        double CONSTANT2= 5/9;  // =0  ??
 
-        celsius=  ((fahrenheit-32)*KONVERTER);
-
+        celsius=  ((fahrenheit-32.0)*CONSTANT);
         return  celsius;
     }
 
