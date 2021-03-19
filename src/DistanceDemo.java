@@ -11,22 +11,22 @@ public class DistanceDemo {
 
     }
 
-        public static int kilometerToMile(int kilometer) {
+        public static double kilometerToMile(double kilometer) {
 
-            int miles=0;
+            double miles=0;
             double KONVERTER= 0.62;
 
-            miles= (int) (kilometer * KONVERTER);
+            miles=  (kilometer * KONVERTER);
 
             return miles;
         }
 
-    public static int mileToKilometer(int miles) {
+    public static double mileToKilometer(double miles) {
 
-        int kilometer=0;
+        double kilometer=0;
         double KONVERTER= 1.61;
 
-        kilometer= (int) (miles * KONVERTER);
+        kilometer= (miles * KONVERTER);
 
         return kilometer;
     }
